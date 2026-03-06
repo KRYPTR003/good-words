@@ -1,1 +1,0 @@
-# kyrptr.github.io
