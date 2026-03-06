@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A small page of good words to read and feel better." />
+    <title>Good Words</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <div class="bg" aria-hidden="true">
+      <div class="bg__grain"></div>
+      <div class="bg__blob bg__blob--a"></div>
+      <div class="bg__blob bg__blob--b"></div>
+      <div class="bg__grid"></div>
+    </div>
+
+    <header class="header" data-reveal>
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Good Words</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#comfort">Comfort</a>
+          <a class="nav__link" href="#classics">Classics</a>
+          <a class="nav__link" href="#notes">Small notes</a>
+          <button class="chip" type="button" id="themeToggle" aria-pressed="false">
+            <span class="chip__icon" aria-hidden="true">◐</span>
+            <span class="chip__text">Theme</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero" id="top">
+        <div class="container hero__inner">
+          <div class="hero__copy" data-reveal>
+            <p class="eyebrow">A small page of</p>
+            <h1 class="headline">
+              <span class="headline__name">Good words</span>
+              <span class="headline__role">To read slowly and feel better.</span>
+            </h1>
+            <p class="lede">
+              Not a profile. Not a newsletter pitch. Just a gentle shelf of lines that hold you up:
+              <strong>kindness</strong>, <strong>courage</strong>, <strong>hope</strong>.
+            </p>
+
+            <div class="cta">
+              <a class="btn btn--primary" href="#comfort">Start here</a>
+              <a class="btn btn--ghost" href="#classics">Go to classics</a>
+            </div>
+
+            <div class="meta">
+              <div class="meta__pill" title="How to use this page">
+                <span class="meta__dot" aria-hidden="true"></span>
+                <span>Pick a line. Breathe. Continue.</span>
+              </div>
+              <div class="meta__pill" title="Promise">
+                <span class="meta__spark" aria-hidden="true"></span>
+                <span>Simple, quiet, and reader-first</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero__card" data-reveal>
+            <div class="card">
+              <div class="card__top">
+                <div class="avatar" aria-hidden="true">
+                  <span class="avatar__ring"></span>
+                  <span class="avatar__core"></span>
+                </div>
+                <div class="card__who">
+                  <p class="card__name">A line for right now</p>
+                  <p class="card__title">Rotates every few seconds</p>
+                </div>
+              </div>
+
+              <div class="card__stats" role="list">
+                <div class="stat" role="listitem">
+                  <p class="stat__k">Quote</p>
+                  <p class="stat__v" id="quoteText">Loading…</p>
+                </div>
+                <div class="stat" role="listitem">
+                  <p class="stat__k">From</p>
+                  <p class="stat__v" id="quoteFrom">—</p>
+                </div>
+                <div class="stat" role="listitem">
+                  <p class="stat__k">Kind of line</p>
+                  <p class="stat__v" id="quoteTag">—</p>
+                </div>
+              </div>
+
+              <div class="card__links">
+                <a class="link" href="#comfort">Comfort</a>
+                <a class="link" href="#classics">Classics</a>
+                <a class="link" href="#notes">Small notes</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <div class="scroll-hint__mouse">
+            <div class="scroll-hint__wheel"></div>
+          </div>
+          <p class="scroll-hint__text">Scroll</p>
+        </div>
+      </section>
+
+      <section class="section" id="comfort">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2 class="h2">Comfort, in sentences</h2>
+            <p class="sub">
+              A few soft reminders. These are original paraphrases inspired by beloved modern stories
+              (so we avoid long copyrighted quotes).
+            </p>
+          </div>
+
+          <div class="about" data-reveal>
+            <div class="about__text">
+              <p>
+                Some books feel like a warm lamp in a quiet room: grumpy hearts turning gentle,
+                small towns learning to hold each other, and people discovering they’re not as alone
+                as they feared.
+              </p>
+              <p>
+                If you’d like specific quotes from a modern book (like <em>A Man Called Ove</em>),
+                paste the exact lines you want and I’ll format them beautifully on this page.
+              </p>
+            </div>
+            <div class="about__tiles" aria-label="Highlights">
+              <div class="tile" data-tilt>
+                <p class="tile__k">Reminder</p>
+                <p class="tile__v">Kindness is practical</p>
+              </div>
+              <div class="tile" data-tilt>
+                <p class="tile__k">Reminder</p>
+                <p class="tile__v">You can start again</p>
+              </div>
+              <div class="tile" data-tilt>
+                <p class="tile__k">Reminder</p>
+                <p class="tile__v">Small steps count</p>
+              </div>
+              <div class="tile" data-tilt>
+                <p class="tile__k">Reminder</p>
+                <p class="tile__v">Ask for help early</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="classics">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2 class="h2">Classic lines (public domain)</h2>
+            <p class="sub">
+              These are safe to quote fully because they’re from public-domain works.
+            </p>
+          </div>
+
+          <div class="grid">
+            <article class="project" data-reveal data-tilt>
+              <div class="project__top">
+                <h3 class="h3">Jane Austen</h3>
+                <span class="tag">Persuasion</span>
+              </div>
+              <p class="project__desc">
+                “There could have been no two hearts so open, no tastes so similar, no feelings so in unison.”
+              </p>
+              <div class="project__meta">
+                <span class="pill">Love</span>
+                <span class="pill">Warmth</span>
+                <span class="pill">Hope</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--small btn--ghost" href="#top" aria-label="Back to top">Back</a>
+                <a class="btn btn--small btn--primary" href="#notes" aria-label="More notes">More</a>
+              </div>
+            </article>
+
+            <article class="project" data-reveal data-tilt>
+              <div class="project__top">
+                <h3 class="h3">Oscar Wilde</h3>
+                <span class="tag">The Happy Prince</span>
+              </div>
+              <p class="project__desc">
+                “He is little better than a beggar, who does not thank his benefactor.”
+              </p>
+              <div class="project__meta">
+                <span class="pill">Gratitude</span>
+                <span class="pill">Gentleness</span>
+                <span class="pill">Care</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--small btn--ghost" href="#top" aria-label="Back to top">Back</a>
+                <a class="btn btn--small btn--primary" href="#notes" aria-label="More notes">More</a>
+              </div>
+            </article>
+
+            <article class="project" data-reveal data-tilt>
+              <div class="project__top">
+                <h3 class="h3">Mark Twain</h3>
+                <span class="tag">Roughing It</span>
+              </div>
+              <p class="project__desc">
+                “Courage is resistance to fear, mastery of fear—not absence of fear.”
+              </p>
+              <div class="project__meta">
+                <span class="pill">Courage</span>
+                <span class="pill">Steadiness</span>
+                <span class="pill">Start anyway</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--small btn--ghost" href="#top" aria-label="Back to top">Back</a>
+                <a class="btn btn--small btn--primary" href="#notes" aria-label="More notes">More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="notes">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2 class="h2">Small notes to keep</h2>
+            <p class="sub">
+              A few lines you can carry into the rest of your day.
+            </p>
+          </div>
+
+          <div class="contact" data-reveal>
+            <div class="contact__card">
+              <p class="contact__k">When you’re overwhelmed</p>
+              <p class="contact__hint">
+                Do the next kind thing that is small enough to finish.
+              </p>
+            </div>
+            <div class="contact__card">
+              <p class="contact__k">When you’re stuck</p>
+              <p class="contact__hint">
+                Reduce the problem until it becomes a sentence you can answer.
+              </p>
+            </div>
+            <div class="contact__card">
+              <p class="contact__k">When you feel behind</p>
+              <p class="contact__hint">
+                Compare less. Build one small proof of progress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">© <span id="year"></span> Good Words</p>
+        <a class="footer__top" href="#top">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>
